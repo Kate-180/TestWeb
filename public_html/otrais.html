@@ -22,10 +22,10 @@
                 <div class="w3-bar-item">
                     <a href="index.html#" class="w3-button w3-padding-large">SĀKUMS</a>
                     <div class="w3-dropdown-hover w3-hide-small">
-                        <button class="w3-padding-large w3-button" title="atteli">ATTĒLI <i class="fa fa-caret-down"></i></button>     
+                        <button class="w3-padding-large w3-button" title="atteli">ATTĒLU APSTRĀDE <i class="fa fa-caret-down"></i></button>     
                         <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                            <a href="index.html#GIMP" class="w3-bar-item w3-button">GIMP</a>
-                            <a href="index.html#INKSCAPE" class="w3-bar-item w3-button">INKSCAPE</a>
+                            <a href="index.html#GIMP" class="w3-bar-item w3-button">RAKSTGRAFIKA</a>
+                            <a href="index.html#INKSCAPE" class="w3-bar-item w3-button">VEKTORGRAFIKA</a>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                     <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO</a>
                 </div>
                 <div class="w3-bar-item">
-                    <a href="index.html#teksts" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEKSTS</a>
+                    <a href="index.html#teksts" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEKSTAPSTRĀDE</a>
                 </div>
                 <div class="w3-bar-item">
                     <a href="index.html#izklajlapas" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IZKLĀJLAPAS</a>
@@ -41,13 +41,15 @@
                 <div class="w3-bar-item">
                     <a href="otrais.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INDIVIDUĀLĀ TĒMA</a>
                 </div>
-                <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+                <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"></a>
 
             </div>
         </div>
         <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-            <a href="index.html#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ATTĒLU APSTRĀDE</a>
+            <a href="index.html#atteli" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ATTĒLU APSTRĀDE</a>
             <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO</a>
+            <a href="index.html#teksts" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEKSTAPSTRĀDE</a>
+            <a href="index.html#izklajlapas" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">IZKLĀJLAPAS</a>
             <a href="index.html#otrais" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INDIVIDUĀLĀ TĒMA</a>
         </div>
         <div class="w3-container main-content">
@@ -71,5 +73,15 @@
             <h4>Atsauces:</h4>
             <p><a href="https://lvportals.lv/skaidrojumi/294871-kas-ir-personas-dati-vispariga-datu-aizsardzibas-regula-i-2018" target="_blank">lvportals.lv</a></p>
         </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
     </body>
 </html>
